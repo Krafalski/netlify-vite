@@ -8,14 +8,12 @@
     "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
-    "test": "cypress open",
-    "eject": "react-scripts eject"
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "eslintConfig": {
     "extends": [
@@ -36,8 +34,10 @@
     ]
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
     "cypress": "^9.7.0",
     "cypress-react-selector": "^2.3.11",
-    "cypress-watch-and-reload": "^1.5.4"
+    "cypress-watch-and-reload": "^1.5.4",
+    "vite": "^4.3.9"
   }
 }
